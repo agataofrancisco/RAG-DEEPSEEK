@@ -54,7 +54,7 @@ def create_rag_chain(retriever):
     prompt = """
         tu és um assistente para tarefas de perguntas e respostas. Use as seguintes partes do contexto recuperado para responder à pergunta.  
         Se não souber a resposta, apenas diga que não sabe.  
-        Responda em tópicos. Certifique-se de que sua resposta seja relevante para a pergunta e baseada apenas no contexto fornecido.  
+        Responda em tópicos. Certifique-se de que sua resposta seja relevante para a pergunta e baseada apenas no contexto fornecido RESPONDA SEMPRE EM PORTUGÊS.  
 
         Pergunta: {question}  
         Contexto: {context}  
@@ -72,7 +72,7 @@ def create_rag_chain(retriever):
 # Main execution logic
 if __name__ == "__main__":
     # Load document
-    source = "rag-dataset/PN-TuyeneComesso.pdf"
+    source = "rag-dataset/FVG.pdf "
     markdown_content = load_and_convert_document(source)
     chunks = get_markdown_splits(markdown_content)
     
@@ -87,10 +87,10 @@ if __name__ == "__main__":
     
     # Questions for retrieval
     questions = [
-        #"Qual é a visão da tuyene comesso?",
-        #"Quais são os valore que tem a empresa?",
-        "Quais são os serviços que a empresa presta?",
-        #"Quem é CEO da empresa?"
+        #"Quem é o leonel messi?",
+        #"Quais são as caracteristicas do indicador?",
+        "o que são fair value gaps?",
+        #"Quando é que o preço se move em busca de liquidez"
     ]
     
     # Answer questions
