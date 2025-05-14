@@ -87,9 +87,9 @@ if __name__ == "__main__":
     
     # Questions for retrieval
     questions = [
-        #"Quem é o leonel messi?",
+        "Quem é o leonel messi?",
         #"Quais são as caracteristicas do indicador?",
-        "o que são fair value gaps?",
+        #"o que são fair value gaps?",
         #"Quando é que o preço se move em busca de liquidez"
     ]
     
